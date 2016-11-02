@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f067e93-4b00-4711-94c4-709e133504b8" name="Default" comment="basket">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Config.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin.check.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controllers/catalog.controller.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controllers/guest.controller.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controllers/json.controller.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controllers/logout.controller.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controllers/main.controller.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/admin.view.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/basket.view.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/catalog.view.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/category.view.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/guest.view.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/main.view.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/order.view.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/product.view.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/registration.view.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.php" afterPath="$PROJECT_DIR$/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/login.controller.php" afterPath="$PROJECT_DIR$/controllers/login.controller.php" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,18 +56,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="categories.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/repository/categories.php">
+      <file leaf-file-name="login.controller.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controllers/login.controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="12" column="28" selection-start-line="10" selection-start-column="4" selection-end-line="12" selection-end-column="28" />
-              <folding>
-                <marker date="1478034356398" expanded="true" signature="60:111" ph="INSERT INTO `categories`... " />
-                <marker date="1478034356398" expanded="true" signature="251:277" ph="SELECT * FRO... categories" />
-                <marker date="1478034356398" expanded="true" signature="428:466" ph="SELECT * FRO... categories" />
-                <marker date="1478034356398" expanded="true" signature="594:655" ph="UPDATE `cate... " />
-                <marker date="1478034356398" expanded="true" signature="775:811" ph="DELETE FROM " />
-              </folding>
+            <state relative-caret-position="260">
+              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -131,11 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="helpers.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="helpers.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/helpers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
-              <caret line="95" column="1" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
+            <state relative-caret-position="2288">
+              <caret line="88" column="45" selection-start-line="88" selection-start-column="45" selection-end-line="88" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -207,7 +185,6 @@
         <option value="$PROJECT_DIR$/templates/header.php" />
         <option value="$PROJECT_DIR$/database.php" />
         <option value="$PROJECT_DIR$/repository/users.php" />
-        <option value="$PROJECT_DIR$/controllers/login.controller.php" />
         <option value="$PROJECT_DIR$/routing.php" />
         <option value="$PROJECT_DIR$/controller.php" />
         <option value="$PROJECT_DIR$/repository/categories.php" />
@@ -218,6 +195,7 @@
         <option value="$PROJECT_DIR$/templates/account.view.php" />
         <option value="$PROJECT_DIR$/repository/transaction.php" />
         <option value="$PROJECT_DIR$/config.php" />
+        <option value="$PROJECT_DIR$/controllers/login.controller.php" />
       </list>
     </option>
   </component>
@@ -282,20 +260,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="HwMySQL" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HwMySQL" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HwMySQL" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repository" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -491,12 +455,12 @@
       <workItem from="1478021525151" duration="4670000" />
       <workItem from="1478031842883" duration="3917000" />
       <workItem from="1478103287248" duration="10954000" />
-      <workItem from="1478123429150" duration="94000" />
+      <workItem from="1478123429150" duration="767000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="311852000" />
+    <option name="totallyTimeSpent" value="312525000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -509,9 +473,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2780303" sideWeight="0.50619197" order="0" side_tool="true" content_ui="combo" x="1993" y="89" width="187" height="801" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2780303" sideWeight="0.50619197" order="0" side_tool="true" content_ui="combo" x="1993" y="89" width="187" height="801" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3721973" sideWeight="0.5087848" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -724,6 +688,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
+          <folding>
+            <marker date="1478023765143" expanded="true" signature="94:172" ph="INSERT INTO users... " />
+            <marker date="1478023765143" expanded="true" signature="322:393" ph="SELECT * FRO... users" />
+            <marker date="1478023765143" expanded="true" signature="534:666" ph="SELECT * FRO... users" />
+            <marker date="1478023765143" expanded="true" signature="789:884" ph="SELECT * FRO... users" />
+            <marker date="1478023765143" expanded="true" signature="997:1029" ph="SELECT * FRO... users" />
+            <marker date="1478023765143" expanded="true" signature="1242:1273" ph="DELETE FROM " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -765,14 +737,6 @@
             <marker date="1478114690714" expanded="true" signature="492:663" ph="SELECT a.gui... users_accounts" />
             <marker date="1478114690714" expanded="true" signature="492:670" ph="SELECT a.gui... users_accounts" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/login.controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -859,8 +823,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/helpers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="95" column="1" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
+        <state relative-caret-position="2288">
+          <caret line="88" column="45" selection-start-line="88" selection-start-column="45" selection-end-line="88" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/login.controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
           <folding />
         </state>
       </provider>

@@ -6,9 +6,9 @@ if ($action == 'login'){
     $autrizationOk = authorizationUser($pdo,$loginForm,$passwordForm);
 
     if ($autrizationOk)  {
-        //    if ($rememberMe){
-//        setcookie();
-//    }
+        if ($rememberMe){
+            setcookie('password', md5($passwordForm), time()+9999999 );
+        }
         $_SESSION['id'] = $autrizationOk[0]['id'];
         header('location: /account');
 
