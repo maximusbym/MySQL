@@ -1,5 +1,6 @@
 <form method="post" action="/account">
     <div class="container">
+        <h4 class="text-danger text-center">Your balance = <?=$data['sum']?></h4>
         <p><label for="descr">description new account</label></p>
         <input id="descr" class="form-control" name="new_account" type="text">
 
@@ -13,6 +14,7 @@
         <tr>
             <td>Guid</td>
             <td>Description</td>
+            <td>Sub owners</td>
 
         </tr>
             <?php
@@ -22,6 +24,7 @@
                     echo "<tr>";
                     echo "<td>".$value['guid']."</td>";
                     echo "<td>".$value['description']."</td>";
+                    echo "<td>".$value['subOwners']."</td>";
                     echo "<tr>";
                 }
             }
@@ -72,12 +75,13 @@
 </form>
 <hr>
 <div class="container">
+    <a class="text-uppercase" href="/account?sort">Sort by category</a>
     <table class="table table-bordered table-striped">
         <h3>Transactions</h3>
         <tr>
             <td>Operation name</td>
             <td>Description</td>
-            <td>Guid</td>
+            <td>Acoount Guid</td>
             <td>Category</td>
             <td>Price</td>
             <td>Created at</td>
@@ -86,23 +90,24 @@
         <?php
 
         if($data){
-            $balance = 0;
+
             foreach ($data['transaction'] as $key => $value) {
                 echo "<tr>";
                 echo "<td>".$value['name']."</td>";
                 echo "<td>".$value['description']."</td>";
                 echo "<td>".$value['guid']."</td>";
                 echo "<td>".$value['category']."</td>";
-                echo "<td>".$value['price']."</td>";
+                $sum = number_format($value['price'], 2, ',', ' ');
+                echo "<td>".$sum."</td>";
                 echo "<td>".$value['created_at']."</td>";
-                $balance += $value['price'];
+
                 echo "<tr>";
             }
         }
-        echo "</table>";
-        echo "<h4>Your balance = $balance</h4>";
-        ?>
 
+        echo "</table>";
+
+        ?>
 
 </div>
 
